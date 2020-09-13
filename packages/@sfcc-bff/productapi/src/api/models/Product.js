@@ -134,7 +134,13 @@ class Product {
     constructor(apiProduct, userSelectedColor) {
         this.id = apiProduct.id;
         this.name = apiProduct.name;
-        this.masterId = apiProduct.master.masterId;
+
+        if (apiProduct.master != null) {
+            this.masterId = apiProduct.master.masterId;
+        } else {
+            this.masterId = '';
+        }
+
         this.price = apiProduct.price;
 
         let selectedColor =
@@ -152,11 +158,15 @@ class Product {
         const firstImage = this.images({ allImages: true })[0];
         this.image = firstImage ? firstImage.link : '';
 
-        this.variants = getVariants(apiProduct.variants);
-        this.variationAttributes = getVariationAttributes(
-            apiProduct.variationAttributes,
-            apiProduct.imageGroups,
-        );
+        if (apiProduct.variants != null) {
+            this.variants = getVariants(apiProduct.variants);
+
+            this.variationAttributes = getVariationAttributes(
+                apiProduct.variationAttributes,
+                apiProduct.imageGroups,
+            );
+        }
+
         this.prices = getPrices(apiProduct);
     }
 }
