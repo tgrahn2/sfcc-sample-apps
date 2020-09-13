@@ -14,8 +14,8 @@
 const COMMERCE_API_PATH = '/api';
 
 // Commerce SDK
-const COMMERCE_CLIENT_API_SITE_ID = 'nto';
-// const COMMERCE_CLIENT_API_SITE_ID = 'RefArch';
+//const COMMERCE_CLIENT_API_SITE_ID = 'nto';
+const COMMERCE_CLIENT_API_SITE_ID = 'RefArch';
 const COMMERCE_CLIENT_CLIENT_ID = 'd51df44a-c1db-4f25-9946-f494a8ba9a9d'; // TODO
 const COMMERCE_CLIENT_REALM_ID = 'zzsa';
 const COMMERCE_CLIENT_INSTANCE_ID = '060';
