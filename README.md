@@ -1,4 +1,4 @@
-# Commerce Storefront Sample Application &middot; [![CircleCI][circleci-image]][circleci-url]
+# NTO Commerce Storefront Sample Application &middot; [![CircleCI][circleci-image]][circleci-url]
 
 Our storefront sample application shows how you can build amazing commerce experiences with the latest Commerce platform technologies. The sample application helps developers get started by proving out a clear path to successfully build a storefront using our latest platform technologies, such as the Salesforce Commerce API and the Salesforce Commerce Node.js SDK.
 
