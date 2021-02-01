@@ -48,7 +48,7 @@
                 </div>
 
                 <!-- Variations and Quantity -->
-                <commerce-variations onupdateproduct={updateProductDetails} variations={product.variations} variation-attributes={product.variationAttributes} inventory={product.inventory}></commerce-variations>
+                <commerce-variations onupdateproduct={updateProductDetails} variations={product.variations} variation-attributes={product.variationAttributes} inventory={product.inventory}  issale={product.isSale}></commerce-variations>
 
                 <!-- Product Availability -->
                 <commerce-product-availability inventory={product.inventory} type={product.type} quantity={selectedQty} context="pdp"></commerce-product-availability>

@@ -10,6 +10,7 @@ export default class Variations extends LightningElement {
     @api variations;
     @api variationAttributes;
     @api inventory;
+    @api issale;
     selectedColor;
     selectedSize = '-';
     isSizeAndColorSelected = false;

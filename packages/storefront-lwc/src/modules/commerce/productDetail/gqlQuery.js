@@ -10,6 +10,7 @@ const QUERY = gql`
             shortDescription
             currency
             price
+            isSale
             prices {
                 sale
                 list

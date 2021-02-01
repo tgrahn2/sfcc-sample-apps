@@ -137,6 +137,11 @@ class Product {
         this.masterId = apiProduct.master.masterId;
         this.price = apiProduct.price;
 
+        /////////////////////////////////////////////////
+        /////   add isSale attribute here  //////////////
+        /////////////////////////////////////////////////
+        this.isSale = apiProduct.c_isSale; // c_* is what custom attributes use.
+
         let selectedColor =
             userSelectedColor !== 'undefined' && userSelectedColor !== 'null'
                 ? userSelectedColor

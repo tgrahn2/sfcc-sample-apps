@@ -29,6 +29,7 @@ export const typeDef = gql`
         type: ProductType
         inventory: Inventory!
         productPromotions: [ProductPromotion]
+        isSale: Boolean
     }
 
     type Prices {
